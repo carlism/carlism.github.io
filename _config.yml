@@ -1,1 +1,122 @@
-theme: jekyll-theme-cayman
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Carlism . Github . IO
+email: carl@leiby.net
+description: >- # this means to ignore newlines until "baseurl:"
+  Hey!  You found my github site.  Weird.  I don't think I link to it from anywhere.
+  What are you doing here?
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: carlism
+github_username:  carlism
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+assets:
+  source_maps: false # false on JEKYLL_ENV=production
+  destination: "/assets"
+  compression: true # true on JEKYLL_ENV=production
+  gzip: true
+  defaults:
+    js: { integrity: true } # true on JEKYLL_ENV=production
+    css: { integrity: true } # true on JEKYLL_ENV=production
+    img: { integrity: true } # true on JEKYLL_ENV=production
+  caching:
+    path: ".jekyll-cache/assets"
+    type: file # Possible values: memory, file
+    enabled: true
+  # --
+  # Assets you wish to always have compiled.
+  #   This can also be combined with raw_precompile which
+  #   copies assets without running through the pipeline
+  #   making them ultra fast.
+  # --
+  precompile: []
+  raw_precompile: [
+    #
+  ]
+  # --
+  # baseurl: whether or not to append site.baseurl
+  # destination: the folder you store them in on the CDN.
+  # url: the CDN url (fqdn, or w/ identifier).
+  # --
+  cdn:
+    baseurl: false
+    destination: false
+    url: null
+  # --
+  # These are all default. No need to add them
+  #   Only use this if you have more.
+  # --
+  sources:
+    - assets/css
+    - assets/fonts
+    - assets/images
+    - assets/videos
+    - assets/javascript
+    - assets/video
+    - assets/image
+    - assets/img
+    - assets/js
+    - _assets/css
+    - _assets/fonts
+    - _assets/images
+    - _assets/videos
+    - _assets/javascript
+    - _assets/video
+    - _assets/image
+    - _assets/img
+    - _assets/js
+    - css
+    - fonts
+    - images
+    - videos
+    - javascript
+    - video
+    - image
+    - img
+    - js
+  plugins:
+    css: { autoprefixer: {}}
+    img: { optim: {}}
